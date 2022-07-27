@@ -7,6 +7,8 @@ N.B. that some reports, including the FortiGate DoS Report, contain charts whose
 
 You can override this default limit if you want to see this full graph without truncation, up to a maximum of 10M entries, using the below CLI commands on FortiAnalyzer. If you do this, please pay attention to the RAM and CPU utilization of your FortiAnalyzer, and if it is already tight, you may need to increase resource allocation in vSphere in order to run reports that contain graphs with more than 10,000 entries. 
 
+```
 config system report setting
   set max-table-rows <integer between 10,000 and 10,000,000>
 end
+```
